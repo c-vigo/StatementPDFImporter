@@ -1,0 +1,7 @@
+/.idea/
+/pdf_importer.egg-info/
+/.eggs/
+/build/
+/dist/
+/docs/build/
+/docs/source/api/
