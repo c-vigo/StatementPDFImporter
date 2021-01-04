@@ -40,7 +40,10 @@ setup(
         'setuptools>=30',
     ],
     install_requires=[
-        'camelot'
+        'camelot-py',
+        'python-dateutil',
+        'opencv-python',
+        'pandas'
     ],
     extras_require={
         "docs":  [
@@ -56,7 +59,8 @@ setup(
         ],
     },
     tests_require=[
-        'pytest'
+        'pytest',
+        'matplotlib'
     ],
     include_package_data=True
 )
