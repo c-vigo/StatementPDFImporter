@@ -23,7 +23,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=__project__.__url__,
-    packages=['pdf-importer'],
+    packages=['pdf_importer'],
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",

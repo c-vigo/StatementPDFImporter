@@ -1,5 +1,5 @@
 __author__ = 'Carlos Vigo <carviher1990@gmailcom>'
-__email__ = '<carviher1990@gmailcom>'
+__email__ = '<carlosv@phys.ethz.ch>'
 __short_author__ = 'Carlos Vigo'
 __copyright__ = '2021, Carlos Vigo'
 __package_name__ = 'pdf-importer'
