@@ -45,22 +45,5 @@ setup(
         'opencv-python',
         'pandas'
     ],
-    extras_require={
-        "docs":  [
-            "wheel",
-            "recommonmark",
-            "sphinx",
-            "sphinx-rtd-theme",
-            "sphinx-paramlinks",
-        ],
-        "dev": [
-            "flake8",
-            "pytest",
-        ],
-    },
-    tests_require=[
-        'pytest',
-        'matplotlib'
-    ],
     include_package_data=True
 )
