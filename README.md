@@ -65,4 +65,3 @@ This project is licensed under the [GNU GPLv3 License](LICENSE.md)
 ## Built With
 
 * [PyCharm Professional 2020](https://www.jetbrains.com/pycharm//) - The IDE used
-* [Sphinx](https://www.sphinx-doc.org/en/master/index.html) - Documentation
