@@ -2,8 +2,11 @@
 # Author: Carlos Vigo
 # Contact: carviher1990@gmail.com
 
-"""
-    TODO.
+""" PDF parser for credit card statements.
+It accepts statement from the following issuers:
+ - Cembra (Cumulus MasterCard)
+ - Swisscard Cashback (AMEX / VISA / MasterCard)
+The data can be saved to a CSV file compatible with Wallet import feature.
 """
 
 # Local imports
