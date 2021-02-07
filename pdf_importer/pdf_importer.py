@@ -15,7 +15,7 @@ from .__project__ import (
     __module_name__ as module,
     __description__ as prog_desc,
 )
-from Importers import extract_cembra, extract_cashback
+from .Importers import extract_cembra, extract_cashback
 
 
 def pdf_importer():
