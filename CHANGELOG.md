@@ -12,5 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Cembra & Cumulus](https://www.cembra.ch/en/cards/cembra-mastercard/) MasterCard
   - [Swisscard Cashback](https://www.swisscard.ch/en/private-customers/products) (AMEX / VISA / MasterCard)
 
+
+## [0.2] - 2021-02-07
+- Hotfix
     
 [0.1]: https://github.com/c-vigo/StatementPDFImporter/tree/v0.1
