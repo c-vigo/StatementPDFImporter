@@ -58,7 +58,7 @@ def extract_cashback(filename):
     for index, row in df.iterrows():
         try:
             date = parse(row[0].strip(), dayfirst=True).date()
-            text = row[1]
+            text = row[1].replace("\n", " ")
             amount = -float(row[2])
 
             entries.append([date, amount, text])
