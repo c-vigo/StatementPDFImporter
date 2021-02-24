@@ -5,3 +5,5 @@
 /dist/
 /docs/build/
 /docs/source/api/
+.vscode/
+__pycache__/
