@@ -9,9 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+## [0.4] - 2021-03-27
+
+- Fix: amounts above 1000 with coma-separated thousands
+
 ## [0.3] - 2021-02-24
 
-- [Fix](https://github.com/c-vigo/StatementPDFImporter/issues/2) newline in transaction description messing with CSV output
+- [Fix](https://github.com/c-vigo/StatementPDFImporter/issues/2): newline in transaction description messing with CSV output
 
 ## [0.2] - 2021-02-07
 
@@ -25,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - [Swisscard Cashback](https://www.swisscard.ch/en/private-customers/products) (AMEX / VISA / MasterCard)
 
 [Unreleased]: https://github.com/c-vigo/StatementPDFImporter/compare/v0.2...HEAD
+[0.4]: https://github.com/c-vigo/StatementPDFImporter/tree/v0.4
 [0.3]: https://github.com/c-vigo/StatementPDFImporter/tree/v0.3
 [0.2]: https://github.com/c-vigo/StatementPDFImporter/tree/v0.2
 [0.1]: https://github.com/c-vigo/StatementPDFImporter/tree/v0.1
