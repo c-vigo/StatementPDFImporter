@@ -24,8 +24,8 @@ def extract_cembra(filename):
             date = parse(row[1].strip(), dayfirst=True).date()
             date2 = parse(row[0].strip(), dayfirst=True).date()
             text = row[2]
-            credit = row[3]
-            debit = row[4]
+            credit = row[3].replace('\'', '')
+            debit = row[4].replace('\'', '')
             amount = -float(debit) if debit else float(credit)
             entries.append([date, amount, text])
         except ValueError:
