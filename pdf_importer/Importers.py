@@ -59,7 +59,10 @@ def extract_cashback(filename):
         try:
             date = parse(row[0].strip(), dayfirst=True).date()
             text = row[1].replace("\n", " ")
-            amount = -float(row[2])
+            amount = -float(row[2].replace("'", ""))
+
+            if text == "YOUR PAYMENT – THANK YOU":
+                amount = -amount
 
             entries.append([date, amount, text])
         except ValueError:
