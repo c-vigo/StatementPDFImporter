@@ -12,24 +12,21 @@ from pandas import concat
 def extract_cembra(filename):
     entries = []
 
-    # noinspection PyUnresolvedReferences
-    tables = camelot.read_pdf(filename, pages='2-end', flavor='stream', table_areas=['60,670,600,100'])
-    df = tables[0].df
-    new_header = df.iloc[0]
-    df = df[1:]
-    df.columns = new_header
+    tables = camelot.read_pdf(filename, pages='2-end')
 
-    for _, row in df.iterrows():
-        try:
-            date = parse(row[1].strip(), dayfirst=True).date()
-            date2 = parse(row[0].strip(), dayfirst=True).date()
-            text = row[2]
-            credit = row[3].replace('\'', '')
-            debit = row[4].replace('\'', '')
-            amount = -float(debit) if debit else float(credit)
-            entries.append([date, amount, text])
-        except ValueError:
-            pass
+    for page, pdf_table in enumerate(tables):
+        df = tables[page].df
+        for _, row in df.iterrows():
+            try:
+                date = parse(row[1].strip(), dayfirst=True).date()
+                _ = parse(row[0].strip(), dayfirst=True).date()
+                text = row[2]
+                credit = row[3].replace('\'', '')
+                debit = row[4].replace('\'', '')
+                amount = -float(debit) if debit else float(credit)
+                entries.append([date, amount, text])
+            except ValueError:
+                pass
 
     return entries
 
