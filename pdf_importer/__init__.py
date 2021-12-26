@@ -5,7 +5,7 @@
 """ PDF parser for credit card statements.
 It accepts statement from the following issuers:
  - Cembra (Cumulus MasterCard)
- - Swisscard Cashback (AMEX / VISA / MasterCard)
+ - SwissCard Cashback (AMEX / VISA / MasterCard)
 The data can be saved to a CSV file compatible with Wallet import feature.
 """
 

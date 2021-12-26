@@ -9,7 +9,7 @@
 It accepts statement from the following issuers:
 
  - [Cembra & Cumulus](https://www.cembra.ch/en/cards/cembra-mastercard/) MasterCard
- - [Swisscard Cashback](https://www.swisscard.ch/en/private-customers/products) (AMEX / VISA / MasterCard)
+ - [SwissCard Cashback](https://www.swisscard.ch/en/private-customers/products) (AMEX / VISA / MasterCard)
 
 The data can be saved to a CSV file compatible with [Wallet by budgetbakers](https://budgetbakers.com/) import feature.
 
